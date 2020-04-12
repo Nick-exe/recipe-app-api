@@ -170,7 +170,7 @@ class PrivateRecipeApiTests(TestCase):
 
         payload = {
             'title': 'Chicken Tikka',
-            'tags' : [new_tag.id]
+            'tags': [new_tag.id]
         }
         url = detail_url(recipe.id)
         self.client.patch(url, payload)
